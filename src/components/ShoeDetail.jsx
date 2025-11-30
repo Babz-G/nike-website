@@ -1,27 +1,51 @@
+import { useState } from "react";
 import nike1 from "../assets/n1-min.png";
+import { QTY, SIZES } from "../Constant";
+import { Select } from "./Select";
 
-export function ShoeDetail() {
+export function ShoeDetail({ shoe, onClickAdd }) {
+  const [form, setForm] = useState({ qty: null, size: null });
+
   return (
-    <div className="flex flex-col space-y-4 lg:flex-row-reverse">
+    <div className="dark:text-white flex flex-col lg:flex-row-reverse space-y-4">
       {/* Shoe image */}
-      <div className="flex-1 ">
-        <div className="from- bg-gradient-to-br from-[#F637CF] from-5% via-[#E3D876] via-40% to-[#4DD4C6]">
-          <img src={nike1} />
+      <div className="flex-1 lg:-mt-32 lg:ml-28">
+        <div className="flex-center h-full bg-gradient-to-br from-[#f637cf] from-5% via-[#e3d876] via-40% to-[#4dd4c6]">
+          <img className="animate-float" src={shoe.src} />
         </div>
       </div>
+
       <div className="flex-1 space-y-6">
         {/* Shoe text details */}
-        <div className="text-5xl font-black md:text-9xl">Nike Air max 270</div>
-        <div className="font-medium md:text-xl">
-          {
-            "The Nike Air Max 270 is a lifestyle shoe that's sure to turn heads with its vibrant color gradient."
-          }
+        <div className="text-5xl font-black md:text-9xl">{shoe.title}</div>
+        <div className="font-medium md:text-xxl">{shoe.description}</div>
+
+        <div className="flex space-x-6">
+          <div className="text-3xl font-extrabold md:text-6xl">
+            {`${shoe.price} $`}
+          </div>
+
+          {/* Select box */}
+          <Select
+            value={form.qty}
+            onChange={(qty) => setForm({ ...form, qty })}
+            title={"QTY"}
+            options={QTY}
+          />
+          <Select
+            value={form.size}
+            onChange={(size) => setForm({ ...form, size })}
+            title={"SIZE"}
+            options={SIZES}
+          />
         </div>
-        <div className="text-3xl font-extrabold md:text-6xl">100 $</div>
 
         {/* Shoe buttons and links */}
         <div className="space-x-10">
-          <button className="h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700">
+          <button
+            onClick={() => onClickAdd(shoe, form.qty, form.size)}
+            className="dark:bg-white dark:text-black btn-press-animation h-14 w-44 bg-black text-white hover:bg-gray-900 active:bg-gray-700"
+          >
             Add to bag
           </button>
           <a
