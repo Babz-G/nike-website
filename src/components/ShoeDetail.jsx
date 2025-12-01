@@ -9,9 +9,12 @@ export function ShoeDetail({ shoe, onClickAdd }) {
   return (
     <div className="dark:text-white flex flex-col lg:flex-row-reverse space-y-4">
       {/* Shoe image */}
-      <div className="flex-1 lg:-mt-32 lg:ml-28">
+      {/* <div className="flex-1 lg:-mt-32 lg:ml-28">
         <div className="flex-center h-full bg-gradient-to-br from-[#f637cf] from-5% via-[#e3d876] via-40% to-[#4dd4c6]">
-          <img className="animate-float" src={shoe.src} />
+          <img className="animate-float" src={shoe.src} /> */}
+      <div className="flex-1 lg:-mt-32 lg:ml-28">
+        <div className="flex-center h-full bg-gradient-to-br from-[#f637cf] from-5% via-[#e3d876] via-40% to-[#4dd4c6] p-8">
+          <img className="animate-float w-full" src={shoe.src} />
         </div>
       </div>
 

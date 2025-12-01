@@ -20,8 +20,8 @@ export default {
           "50%": { transform: "rotate(3deg)" },
         },
         float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
+          "0%, 100%": { transform: "translateY(30px)" },
+          "50%": { transform: "translateY(-90px)" },
         },
         fadeIn: {
           "0%": { opacity: "0" },
@@ -30,18 +30,10 @@ export default {
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
-        float: "float 4s ease-in-out infinite",
+        float: "float 5s ease-in-out infinite",
         fadeIn: "fadeIn 1s ease-in-out",
       },
     },
   },
   plugins: [],
 };
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
