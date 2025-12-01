@@ -1,6 +1,6 @@
 import { useState } from "react";
-import nike1 from "../assets/n1-min.png";
-import { QTY, SIZES } from "../constant";
+// import nike1 from "../assets/n1-min.png";
+import { QTY, SIZES } from "../Constant";
 import { Select } from "./Select";
 
 export function ShoeDetail({ shoe, onClickAdd }) {
@@ -17,8 +17,9 @@ export function ShoeDetail({ shoe, onClickAdd }) {
 
       <div className="flex-1 space-y-6">
         {/* Shoe text details */}
+        {/* <div className="text-5xl font-black md:text-9xl">{shoe.title}</div> */}
         <div className="text-5xl font-black md:text-9xl">{shoe.title}</div>
-        <div className="font-medium md:text-xxl">{shoe.description}</div>
+        <div className="font-medium md:text-l">{shoe.description}</div>
 
         <div className="flex space-x-6">
           <div className="text-3xl font-extrabold md:text-6xl">

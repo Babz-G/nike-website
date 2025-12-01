@@ -46,14 +46,23 @@ export function Nav({ onClickShoppingBtn }) {
       </div>
 
       {/* Cart button */}
+      {/* Cart button */}
       <div
+        onClick={onClickShoppingBtn}
+        className="btn-press-anim fixed bottom-4 left-4 lg:static lg:mr-8"
+      >
+        <div className="flex-center h-12 w-12 cursor-pointer rounded-full bg-white shadow-md dark:bg-gray-700">
+          <TbShoppingBag className="dark:text-white" />
+        </div>
+      </div>
+      {/* <div
         onClick={onClickShoppingBtn}
         className="btn-press-anim fixed bottom-4 left-4 lg:static lg:mr-8"
       >
         <div className="flex-center h-12 w-12 cursor-pointer rounded-full bg-white shadow-md">
           <TbShoppingBag />
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </nav>
   );
 }

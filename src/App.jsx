@@ -3,7 +3,7 @@ import { Nav } from "./components/Nav";
 import { NewArrivalsSection } from "./components/NewArrivalsSection";
 import { ShoeDetail } from "./components/ShoeDetail";
 import { Sidebar } from "./components/Sidebar";
-import { SHOE_LIST } from "./constant";
+import { SHOE_LIST } from "./Constant";
 import { Cart } from "./components/Cart";
 import { BiMoon, BiSun } from "react-icons/bi";
 
@@ -28,7 +28,6 @@ export function App() {
   };
 
   const removeFromCart = (productId) => {
-    console.log("***", productId);
     const updatedCartItems = [...cartItems];
     const existingItemIndex = cartItems.findIndex(
       (item) => item.product.id === productId
@@ -36,6 +35,7 @@ export function App() {
     updatedCartItems.splice(existingItemIndex, 1);
     setCartItems(updatedCartItems);
   };
+
   const addToCart = (product, qty, size) => {
     if (qty && size) {
       const updatedCartItems = [...cartItems];
@@ -54,7 +54,7 @@ export function App() {
   };
 
   return (
-    <div className="animate-fadeIn p-10 dark:bg-night xl:px-24">
+    <div className="animate-fadeIn min-h-screen p-10 bg-white dark:bg-night dark:text-white xl:px-24">
       <Nav onClickShoppingBtn={() => setIsSidebarOpen(true)} />
       <ShoeDetail shoe={currentShoe} onClickAdd={addToCart} />
       <NewArrivalsSection items={SHOE_LIST} onClickCard={setCurrentShoe} />
@@ -64,13 +64,13 @@ export function App() {
       >
         <Cart cartItems={cartItems} onClickTrash={removeFromCart} />
       </Sidebar>
-      <div className=" fixed bottom-4 right-4">
+      <div className="fixed bottom-4 right-4 z-50">
         <button
           onClick={toggleDarkMode}
-          className="rounded-full bg-night-50 px-4 py-2 text-white shadow-lg dark:bg-white dark:text-night"
+          className="flex items-center justify-center h-12 w-12 rounded-full bg-night-50 text-white shadow-lg dark:bg-white dark:text-night"
         >
-          <BiSun className="hidden dark:block" />
-          <BiMoon className="dark:hidden" />
+          <BiSun size={20} className="hidden dark:block" />
+          <BiMoon size={20} className="dark:hidden" />
         </button>
       </div>
     </div>
