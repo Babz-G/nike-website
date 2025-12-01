@@ -1,6 +1,6 @@
 import { IoIosArrowDown } from "react-icons/io";
 // import { twMerge } from "tw-merge";
-import { twMerge } from "tailwind-merge";
+import { twMerge } from "tailwind-merge"; // ✅ Correct!
 
 export function Select({ title, options, className, value, onChange }) {
   return (

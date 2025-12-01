@@ -1,6 +1,6 @@
 import { useState } from "react";
 import nike1 from "../assets/n1-min.png";
-import { QTY, SIZES } from "../Constant";
+import { QTY, SIZES } from "../constant";
 import { Select } from "./Select";
 
 export function ShoeDetail({ shoe, onClickAdd }) {
