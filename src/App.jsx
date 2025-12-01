@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Nav } from "./components/Nav";
 import { NewArrivalsSection } from "./components/NewArrivalsSection";
 import { ShoeDetail } from "./components/ShoeDetail";
-import { Sidebar } from "./components/Sidebar";
+import { SideBar } from "./components/SideBar";
 import { SHOE_LIST } from "./Constant";
 import { Cart } from "./components/Cart";
 import { BiMoon, BiSun } from "react-icons/bi";
@@ -58,12 +58,12 @@ export function App() {
       <Nav onClickShoppingBtn={() => setIsSidebarOpen(true)} />
       <ShoeDetail shoe={currentShoe} onClickAdd={addToCart} />
       <NewArrivalsSection items={SHOE_LIST} onClickCard={setCurrentShoe} />
-      <Sidebar
+      <SideBar
         isOpen={isSidebarOpen}
         onClickClose={() => setIsSidebarOpen(false)}
       >
         <Cart cartItems={cartItems} onClickTrash={removeFromCart} />
-      </Sidebar>
+      </SideBar>
       <div className="fixed bottom-4 right-4 z-50">
         <button
           onClick={toggleDarkMode}
