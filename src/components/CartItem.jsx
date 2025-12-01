@@ -1,6 +1,6 @@
 import { CiTrash } from "react-icons/ci";
 import { Select } from "../components/Select";
-import { SIZES, QTY } from "../constant";
+import { SIZES, QTY } from "../Constant";
 
 export function CartItem({ item: { product, qty, size }, onClickTrash }) {
   return (
