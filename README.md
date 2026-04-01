@@ -26,10 +26,13 @@ A Nike product landing page built with React and Tailwind CSS. The app showcases
 ## 🖼️ Screenshots
 
 **Light Mode**
+<img width="1340" height="697" alt="Screenshot 2026-04-01 at 3 13 25 PM" src="https://github.com/user-attachments/assets/3f324ca9-e27a-412b-b9bb-1b2a5f47e1b5" />
 
 **Dark Mode**
+<img width="1344" height="693" alt="Screenshot 2026-04-01 at 3 14 19 PM" src="https://github.com/user-attachments/assets/ef332511-e394-4c73-acf2-6055da225d36" />
 
 **Cart**
+<img width="1351" height="701" alt="Screenshot 2026-04-01 at 3 14 00 PM" src="https://github.com/user-attachments/assets/bfb42b5f-8196-4754-a213-413786068f84" />
 
 ---
 
