@@ -1,18 +1,56 @@
-# React + Vite
+# 👟 Nike Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> _Just build it._
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📌 Project Description & Purpose
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+A Nike product landing page built with React and Tailwind CSS. The app showcases the Nike Air Max 270 with an interactive shopping experience including a cart, size and quantity selection, and a light/dark mode toggle.
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🚀 Live Site
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 [View the live app here](https://nike-website-one-iota.vercel.app/)
+
+---
+
+## 🖼️ Screenshots
+
+**Light Mode**
+
+**Dark Mode**
+
+**Cart**
+
+---
+
+## ✨ Features
+
+- 👟 Product display with shoe image, name, description, and price
+- 🛒 Shopping cart sidebar showing selected items, size, and quantity
+- 📦 Add to bag button with size and quantity selectors
+- 🌙 Light/dark mode toggle
+- 🔍 View details link for more product info
+- 🧭 Navigation bar with Home, About, Services, Pricing, and Contact links
+
+---
+
+## 🛠️ Tech Stack
+
+|            |                       |
+| ---------- | --------------------- |
+| Languages  | HTML, CSS, JavaScript |
+| Framework  | React + Vite          |
+| Styling    | Tailwind CSS          |
+| Deployment | Vercel                |
+
+---
